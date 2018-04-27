@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity implements IMainActivity {
 
     @Override
     public void myOnClick() {
-        user = mBinding.getUser();
+        user.setLogin("zmienionyLogin");
+        user.setPass("654321");
         mBinding.setUser(user);
     }
 }
